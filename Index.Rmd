@@ -1,0 +1,22 @@
+---
+title: "I'm Silver"
+output: html_document
+---
+
+# This is a 1v1 Lel
+## This is a 1v9
+### No, this is Bronze
+
+Get Da Nexus!!!
+
+* Hourglass
+* Hydra
+* Zeal
+
+Column 1 | Column 2
+-----|-----
+LOL | Dota
+HOTS | Smite
+
+![](maxresdefault.jpg)
+
