@@ -19,4 +19,35 @@ LOL | Dota
 HOTS | Smite
 
 ![](maxresdefault.jpg)
+---
+title: "SQL"
+output: html_document
+---
+
+## Filtering columns and rows
+
+Using SQL you can both filter and order data in a table.
+
+```{r,message=FALSE,warning=FALSE}
+library(Lahman)
+
+library(sqldf)
+```
+
+
+Supose now  I would like to see the homerun totals for the 1927 Yankees. I could write the following query:
+
+```{r}
+
+query <-"select playerID,yearID,teamID,hr from Batting
+WHERE teamID='NYA' and yearID=1927"
+sqldf(query)
+
+Finding the players with the most home runs is easy using the following code 
+
+query<-"Select playerID, yearID,teamID,HR FROM Batting 
+WHERE HR>50
+ORDER BY HR DESC"
+
+sqldf(query)
 
